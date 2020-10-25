@@ -52,7 +52,8 @@ EqtransTot=0
 CapTot=0
 GastoTot=0
 CostoTot=0
-separador=("*"*30,"////","*"*30)
+separador=("*"*30 +"////"+ "*"*30)
+separadormini=("-"*20)
 # Variable que tiene las cuentas
 Cuentas =("1000)Bancos   \n1001)Proveedores \n1002)Terreno  \n1003)Almacen/Inventario \n1004)Edificio  \n1005)Eq Computo \n1006)Eq Transporte  \n1007)Capital Social \n1008)Gasto Ventas  \n1009)Costo Ventas")
 #Variables definidas
@@ -85,9 +86,12 @@ while pop ==True:
             print("Cuenta seleccionada:Bancos")
             Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero d iferente a 1\n:"))
             while  Eleccion == 1:
+                print(separadormini)
                 SCA = int(input("Para hacer un cargo seleccione #1\nPara hacer un abono seleccione #2\n:"))
+                print(separadormini)
                 if SCA ==1:
                     print("Para terminar de hacer un cargo ingrese 0")
+                    print(separadormini)
                     for i in Cargos1000:
                         cargos1000 = int(input("Ingrese la cantidad: "))
                         Cargos1000.append(cargos1000)
@@ -101,6 +105,7 @@ while pop ==True:
                     break
                 elif SCA ==2:
                     print("Para terminar de hacer un abono ingrese 0")
+                    print(separadormini)
                     for i in Abonos1000:
                         abonos1000 = int(input("Ingrese la cantidad: "))
                         Abonos1000.append(abonos1000)
@@ -117,9 +122,12 @@ while pop ==True:
             print("Cuenta seleccionada:Proveedores")
             Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n:"))
             while  Eleccion == 1:
+                print(separadormini)
                 SCA = int(input("Para hacer un cargo seleccione #1\nPara hacer un abono seleccione #2\n:"))
+                print(separadormini)
                 if SCA ==1:
                     print("Para terminar de hacer un cargo ingrese 0")
+                    print(separadormini)
                     for i in Cargos1001:
                         cargos1001 = int(input("Ingrese la cantidad: "))
                         Cargos1001.append(cargos1001)
@@ -133,6 +141,7 @@ while pop ==True:
                     break
                 elif SCA ==2:
                     print("Para terminar de hacer un abono ingrese 0")
+                    print(separadormini)
                     for i in Abonos1001:
                         abonos1001 = int(input("Ingrese la cantidad: "))
                         Abonos1001.append(abonos1001)
@@ -149,9 +158,12 @@ while pop ==True:
             print("Cuenta seleccionada:Terreno")
             Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n:"))
             while  Eleccion == 1:
+                print(separadormini)
                 SCA = int(input("Para hacer un cargo seleccione #1\nPara hacer un abono seleccione #2\n:"))
+                print(separadormini)
                 if SCA ==1:
                     print("Para terminar de hacer un cargo ingrese 0")
+                    print(separadormini)
                     for i in Cargos1002:
                         cargos1002 = int(input("Ingrese la cantidad: "))
                         Cargos1002.append(cargos1002)
@@ -165,6 +177,7 @@ while pop ==True:
                     break
                 elif SCA ==2:
                     print("Para terminar de hacer un abono ingrese 0")
+                    print(separadormini)
                     for i in Abonos1002:
                         abonos1002 = int(input("Ingrese la cantidad: "))
                         Abonos1002.append(abonos1002)
@@ -181,9 +194,12 @@ while pop ==True:
             print("Cuenta seleccionada:Almacen/Inventario")
             Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n:"))
             while  Eleccion == 1:
-                SCA = int(input("Para hacer un cargo seleccione #1\nPara hacer un abono seleccione #2\n":))
+                print(separadormini)
+                SCA = int(input("Para hacer un cargo seleccione #1\nPara hacer un abono seleccione #2\n:"))
+                print(separadormini)
                 if SCA ==1:
                     print("Para terminar de hacer un cargo ingrese 0")
+                    print(separadormini)
                     for i in Cargos1003:
                         cargos1003 = int(input("Ingrese la cantidad: "))
                         Cargos1003.append(cargos1003)
@@ -196,6 +212,7 @@ while pop ==True:
                     print(separador)
                     break
                 elif SCA ==2:
+                    print(separadormini)
                     print("Para terminar de hacer un abono ingrese 0")
                     for i in Abonos1003:
                         abonos1003 = int(input("Ingrese la cantidad: "))
@@ -213,9 +230,12 @@ while pop ==True:
             print("Cuenta seleccionada:Edificio")
             Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n:"))
             while  Eleccion == 1:
+                print(separadormini)
                 SCA = int(input("Para hacer un cargo seleccione #1\nPara hacer un abono seleccione #2\n:"))
+                print(separadormini)
                 if SCA ==1:
                     print("Para terminar de hacer un cargo ingrese 0")
+                    print(separadormini)
                     for i in Cargos1004:
                         cargos1004 = int(input("Ingrese la cantidad: "))
                         Cargos1004.append(cargos1004)
@@ -228,6 +248,7 @@ while pop ==True:
                     print(separador)
                     break
                 elif SCA ==2:
+                    print(separadormini)
                     print("Para terminar de hacer un abono ingrese 0")
                     for i in Abonos1004:
                         abonos1004 = int(input("Ingrese la cantidad: "))
@@ -246,9 +267,12 @@ while pop ==True:
             print("Cuenta seleccionada:Eq de Computo")
             Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n:"))
             while  Eleccion == 1:
+                print(separadormini)
                 SCA = int(input("Para hacer un cargo seleccione #1\nPara hacer un abono seleccione #2\n:"))
+                print(separadormini)
                 if SCA ==1:
                     print("Para terminar de hacer un cargo ingrese 0")
+                    print(separadormini)
                     for i in Cargos1005:
                         cargos1005 = int(input("Ingrese la cantidad: "))
                         Cargos1005.append(cargos1005)
@@ -259,6 +283,7 @@ while pop ==True:
                     print(f"Equipo de Computo= {EqcomTot}")
                     break
                 elif SCA ==2:
+                    print(separadormini)
                     print("Para terminar de hacer un abono ingrese 0")
                     for i in Abonos1005:
                         abonos1005 = int(input("Ingrese la cantidad: "))
@@ -278,9 +303,12 @@ while pop ==True:
             print("Cuenta seleccionada:Eq de transporte")
             Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n:"))
             while  Eleccion == 1:
+                print(separadormini)
                 SCA = int(input("Para hacer un cargo seleccione #1\nPara hacer un abono seleccione #2\n:"))
+                print(separadormini)
                 if SCA ==1:
                     print("Para terminar de hacer un cargo ingrese 0")
+                    print(separadormini)
                     for i in Cargos1006:
                         cargos1006 = int(input("Ingrese la cantidad: "))
                         Cargos1006.append(cargos1006)
@@ -294,6 +322,7 @@ while pop ==True:
                     break
                 elif SCA ==2:
                     print("Para terminar de hacer un abono ingrese 0")
+                    print(separadormini)
                     for i in Abonos1006:
                         abonos1006 = int(input("Ingrese la cantidad: "))
                         Abonos1006.append(abonos1006)
@@ -312,9 +341,12 @@ while pop ==True:
             print("Cuenta seleccionada:Capital Social")
             Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n:"))
             while  Eleccion == 1:
+                print(separadormini)
                 SCA = int(input("Para hacer un cargo seleccione #1\nPara hacer un abono seleccione #2\n:"))
+                print(separadormini)
                 if SCA ==1:
                     print("Para terminar de hacer un cargo ingrese 0")
+                    print(separadormini)
                     for i in Cargos1007:
                         cargos1007 = int(input("Ingrese la cantidad: "))
                         Cargos1007.append(cargos1007)
@@ -328,6 +360,7 @@ while pop ==True:
                     break
                 elif SCA ==2:
                     print("Para terminar de hacer un abono ingrese 0")
+                    print(separadormini)
                     for i in Abonos1007:
                         abonos1007 = int(input("Ingrese la cantidad: "))
                         Abonos1007.append(abonos1007)
@@ -345,9 +378,12 @@ while pop ==True:
             print("Cuenta seleccionada:Gastos de Venta")
             Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n:"))
             while  Eleccion == 1:
+                print(separadormini)
                 SCA = int(input("Para hacer un cargo seleccione #1\nPara hacer un abono seleccione #2\n:"))
+                print(separadormini)
                 if SCA ==1:
                     print("Para terminar de hacer un cargo ingrese 0")
+                    print(separadormini)
                     for i in Cargos1008:
                         cargos1008 = int(input("Ingrese la cantidad: "))
                         Cargos1008.append(cargos1008)
@@ -361,6 +397,7 @@ while pop ==True:
                     break
                 elif SCA ==2:
                     print("Para terminar de hacer un abono ingrese 0")
+                    print(separadormini)
                     for i in Abonos1008:
                         abonos1008 = int(input("Ingrese la cantidad: "))
                         Abonos1008.append(abonos1008)
@@ -380,9 +417,12 @@ while pop ==True:
             print("Cuenta seleccionada:Costos de Venta")
             Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n:"))
             while  Eleccion == 1:
+                print(separadormini)
                 SCA = int(input("Para hacer un cargo seleccione #1\nPara hacer un abono seleccione #2\n:"))
+                print(separadormini)
                 if SCA ==1:
                     print("Para terminar de hacer un cargo ingrese 0")
+                    print(separadormini)
                     for i in Cargos1009:
                         cargos1009 = int(input("Ingrese la cantidad: "))
                         Cargos1009.append(cargos1009)
@@ -396,6 +436,7 @@ while pop ==True:
                     break
                 elif SCA ==2:
                     print("Para terminar de hacer un abono ingrese 0")
+                    print(separadormini)
                     for i in Abonos1009:
                         abonos1009 = int(input("Ingrese la cantidad: "))
                         Abonos1009.append(abonos1009)
@@ -421,7 +462,9 @@ while pop ==True:
         #Total del banco
         if Cuenta2 ==1000:
             print("Cuenta seleccionada:Bancos")
+            print(separadormini)
             Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n:"))
+            print(separadormini)
             while  Eleccion == 1:
                 print(f"Banco={BancoTot}")
                 print(separador)
@@ -429,7 +472,9 @@ while pop ==True:
         #Total de Proveedores
         if Cuenta2 ==1001:
             print("Cuenta seleccionada:Proveedores")
+            print(separadormini)
             Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n:"))
+            print(separadormini)
             while  Eleccion == 1:
                 print(f"Proveedores={ProvTot}")
                 print(separador)
@@ -437,7 +482,9 @@ while pop ==True:
         #Total de Terreno
         if Cuenta2 ==1002:
             print("Cuenta seleccionada:Terreno")
+            print(separadormini)
             Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n:"))
+            print(separadormini)
             while  Eleccion == 1:
                 print(f"Terreno={TerrTot}")
                 print(separador)
@@ -445,7 +492,9 @@ while pop ==True:
         #Total de Almacen
         if Cuenta2 ==1003:
             print("Cuenta seleccionada:Almacen/Inventario")
+            print(separadormini)
             Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n:"))
+            print(separadormini)
             while  Eleccion == 1:
                 print(f"Almacen/Inventario={InvTot}")
                 print(separador)
@@ -453,7 +502,9 @@ while pop ==True:
         #Total de Edificios
         if Cuenta2 ==1004:
             print("Cuenta seleccionada:Edificio")
+            print(separadormini)
             Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n:"))
+            print(separadormini)
             while  Eleccion == 1:
                 print(f"Edificio={EdiTot}")
                 print(separador)
@@ -461,7 +512,9 @@ while pop ==True:
         #Total de Equipo e computo
         if Cuenta2 ==1005:
             print("Cuenta seleccionada:Equipo de Computo")
+            print(separadormini)
             Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n:"))
+            print(separadormini)
             while  Eleccion == 1:
                 print(f"Equipo de Computo={EqcomTot}")
                 print(separador)
@@ -469,7 +522,9 @@ while pop ==True:
         #Total de Equipo de Transporte
         if Cuenta2 ==1006:
             print("Cuenta seleccionada:Equipo de Transporte")
+            print(separadormini)
             Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n:"))
+            print(separadormini)
             while  Eleccion == 1:
                 print(f"Equipo de Transporte={EqtransTot}")
                 print(separador)
@@ -477,7 +532,9 @@ while pop ==True:
         #Total de Capital Social
         if Cuenta2 ==1007:
             print("Cuenta seleccionada:Capital Social")
+            print(separadormini)
             Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n:"))
+            print(separadormini)
             while  Eleccion == 1:
                 print(f"Capital Social={CapTot}")
                 print(separador)
@@ -485,7 +542,9 @@ while pop ==True:
         #Total de Gasto de Ventas
         if Cuenta2 ==1008:
             print("Cuenta seleccionada:Gastos de Ventas")
+            print(separadormini)
             Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n:"))
+            print(separadormini)
             while  Eleccion == 1:
                 print(f"Gastos de Ventas={GastoTot}")
                 print(separador)
@@ -493,7 +552,9 @@ while pop ==True:
         #Total de Costo de Ventas
         if Cuenta2 ==1009:
             print("Cuenta seleccionada:Costo de Ventas")
+            print(separadormini)
             Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n:"))
+            print(separadormini)
             while  Eleccion == 1:
                 print(f"Costo de Ventas={CostoTot}")
                 print(separador)
@@ -502,7 +563,7 @@ while pop ==True:
 
     #Opcion 3______________________________________________________________________________________________________________
     elif op == 3:
-         pop =False
-         print(separador)
-         print("FIN DEL PROCESO :) ")
-         print(separador)
+        pop =False
+        print(separadormini)
+        print("FIN DEL PROCESO :) ")
+        print(separadormini)
