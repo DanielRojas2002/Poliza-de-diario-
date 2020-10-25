@@ -52,3 +52,11 @@ EqtransTot=0
 CapTot=0
 GastoTot=0
 CostoTot=0
+
+# Variable que tiene las cuentas
+Cuentas =("1000)Bancos   \n1001)Proveedores \n1002)Terreno  \n1003)Almacen/Inventario \n1004)Edificio  \n1005)Eq Computo \n1006)Eq Transporte  \n1007)Capital Social \n1008)Gasto Ventas  \n1009)Costo Ventas")
+#Variables definidas
+Cuenta=0
+Eleccion=0
+SCA=0 #SELECCION PARA HACER CARGOS
+pop= True;  #Variable para que cicle el menu
