@@ -1,5 +1,5 @@
 # Poliza-de-diario-
-
+Materia: Contabilidad 
 Este codigo de simular las polizas de diario las cuales elegi 9 cuentas que son:
 
 1000)Bancos
