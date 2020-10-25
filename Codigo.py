@@ -446,3 +446,8 @@ while pop ==True:
             while  Eleccion == 1:
                 print(f"Costo de Ventas={CostoTot}")
                 break 
+    
+
+    #Opcion 3______________________________________________________________________________________________________________
+    elif op == 3:
+         pop =False
