@@ -366,3 +366,83 @@ while pop ==True:
                     CostoTot=(CostoCargos-CostoAbonos)
                     print(f"Almacen/Costoentario= {CostoTot}")
                     break
+    
+
+
+    #Opcion 2______________________________________________________________________________________________________________
+    elif op == 2:
+        print("________________________________________________________________")
+        print("                   2) SALDOS DE CUENTAS                         ")
+        print("________________________________________________________________")
+        print(Cuentas)
+        Cuenta2 = int(input("Ingrese el codigo de la cuenta deseada: "))
+        #Total del banco
+        if Cuenta2 ==1000:
+            print("Cuenta seleccionada:Bancos")
+            Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n"))
+            while  Eleccion == 1:
+                print(f"Banco={BancoTot}")
+                break
+        #Total de Proveedores
+        if Cuenta2 ==1001:
+            print("Cuenta seleccionada:Proveedores")
+            Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n"))
+            while  Eleccion == 1:
+                print(f"Proveedores={ProvTot}")
+                break
+        #Total de Terreno
+        if Cuenta2 ==1002:
+            print("Cuenta seleccionada:Terreno")
+            Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n"))
+            while  Eleccion == 1:
+                print(f"Terreno={TerrTot}")
+                break
+        #Total de Almacen
+        if Cuenta2 ==1003:
+            print("Cuenta seleccionada:Almacen/Inventario")
+            Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n"))
+            while  Eleccion == 1:
+                print(f"Almacen/Inventario={InvTot}")
+                break
+        #Total de Edificios
+        if Cuenta2 ==1004:
+            print("Cuenta seleccionada:Edificio")
+            Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n"))
+            while  Eleccion == 1:
+                print(f"Edificio={EdiTot}")
+                break
+        #Total de Equipo e computo
+        if Cuenta2 ==1005:
+            print("Cuenta seleccionada:Equipo de Computo")
+            Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n"))
+            while  Eleccion == 1:
+                print(f"Equipo de Computo={EqcomTot}")
+                break    
+        #Total de Equipo de Transporte
+        if Cuenta2 ==1006:
+            print("Cuenta seleccionada:Equipo de Transporte")
+            Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n"))
+            while  Eleccion == 1:
+                print(f"Equipo de Transporte={EqtransTot}")
+                break    
+        #Total de Capital Social
+        if Cuenta2 ==1007:
+            print("Cuenta seleccionada:Capital Social")
+            Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n"))
+            while  Eleccion == 1:
+                print(f"Capital Social={CapTot}")
+                break    
+        #Total de Gasto de Ventas
+        if Cuenta2 ==1008:
+            print("Cuenta seleccionada:Gastos de Ventas")
+            Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n"))
+            while  Eleccion == 1:
+                print(f"Gastos de Ventas={GastoTot}")
+                break    
+        #Total de Costo de Ventas
+        if Cuenta2 ==1009:
+            print("Cuenta seleccionada:Costo de Ventas")
+            Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n"))
+            while  Eleccion == 1:
+                print(f"Costo de Ventas={CostoTot}")
+                break 
