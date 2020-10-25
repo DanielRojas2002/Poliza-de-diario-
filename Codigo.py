@@ -60,3 +60,309 @@ Cuenta=0
 Eleccion=0
 SCA=0 #SELECCION PARA HACER CARGOS
 pop= True;  #Variable para que cicle el menu
+
+while pop ==True:
+    print("")
+    print("________________________________________________________________")
+    print("                            MENU                                ")
+    print("________________________________________________________________")
+    Menu = ("1) Registrar un nuevo movimiento \n2) Obtener el saldo de una cuenta especifica \n3) Salir ")
+    print (Menu)
+    op = int(input("Ingrese el numero de la opcion deseada: ")) #Op es la variable de las opciones
+#Opcion 1______________________________________________________________________________________________________________
+    if op == 1:
+        print("")
+        print("________________________________________________________________")
+        print("                 1) REGISTRAR MOVIMIENTO                        ")
+        print("________________________________________________________________")
+        print(Cuentas)
+        Cuenta = int(input("Ingrese el codigo de la cuenta deseada: "))
+        #Aqui inicia la cuenta de banco
+        if Cuenta ==1000:
+            print("Cuenta seleccionada:Bancos")
+            Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero d iferente a 1\n"))
+            while  Eleccion == 1:
+                SCA = int(input("Para hacer un cargo seleccione #1\nPara hacer un abono seleccione #2\n"))
+                if SCA ==1:
+                    print("Para terminar de hacer un cargo ingrese 0")
+                    for i in Cargos1000:
+                        cargos1000 = int(input("Ingrese la cantidad: "))
+                        Cargos1000.append(cargos1000)
+                        if cargos1000==0:
+                            break
+                    BanCargos = sum(Cargos1000)
+                    BancoTot=(BanCargos-BanAbonos)
+                    print(f"Banco= {BancoTot}")
+                    break
+                elif SCA ==2:
+                    print("Para terminar de hacer un abono ingrese 0")
+                    for i in Abonos1000:
+                        abonos1000 = int(input("Ingrese la cantidad: "))
+                        Abonos1000.append(abonos1000)
+                        if abonos1000==0:
+                            break
+                    BanAbonos = sum(Abonos1000)
+                    BancoTot=(BanCargos-BanAbonos)
+                    print(f"Banco= {BancoTot}")
+                    break
+                #Aqui inicia la cuenta de Provedores
+        elif Cuenta ==1001:
+            print("Cuenta seleccionada:Proveedores")
+            Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n"))
+            while  Eleccion == 1:
+                SCA = int(input("Para hacer un cargo seleccione #1\nPara hacer un abono seleccione #2\n"))
+                if SCA ==1:
+                    print("Para terminar de hacer un cargo ingrese 0")
+                    for i in Cargos1001:
+                        cargos1001 = int(input("Ingrese la cantidad: "))
+                        Cargos1001.append(cargos1001)
+                        if cargos1001==0:
+                            break
+                    ProvCargos = sum(Cargos1001)
+                    ProvTot=(ProvCargos-ProvAbonos)
+                    print(f"Proveedores= {ProvTot}")
+                    break
+                elif SCA ==2:
+                    print("Para terminar de hacer un abono ingrese 0")
+                    for i in Abonos1001:
+                        abonos1001 = int(input("Ingrese la cantidad: "))
+                        Abonos1001.append(abonos1001)
+                        if abonos1001==0:
+                            break
+                    ProvAbonos = sum(Abonos1001)
+                    ProvTot=(ProvCargos-ProvAbonos)
+                    print(f"Proveedores= {ProvTot}")
+                    break
+                #Aqui inicia la cuenta de Terreno
+        elif Cuenta ==1002:
+            print("Cuenta seleccionada:Terreno")
+            Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n"))
+            while  Eleccion == 1:
+                SCA = int(input("Para hacer un cargo seleccione #1\nPara hacer un abono seleccione #2\n"))
+                if SCA ==1:
+                    print("Para terminar de hacer un cargo ingrese 0")
+                    for i in Cargos1002:
+                        cargos1002 = int(input("Ingrese la cantidad: "))
+                        Cargos1002.append(cargos1002)
+                        if cargos1002==0:
+                            break
+                    TerrCargos = sum(Cargos1002)
+                    TerrTot=(TerrCargos-TerrAbonos)
+                    print(f"Terreno= {TerrTot}")
+                    break
+                elif SCA ==2:
+                    print("Para terminar de hacer un abono ingrese 0")
+                    for i in Abonos1002:
+                        abonos1002 = int(input("Ingrese la cantidad: "))
+                        Abonos1002.append(abonos1002)
+                        if abonos1002==0:
+                            break
+                    TerrAbonos = sum(Abonos1002)
+                    TerrTot=(TerrCargos-TerrAbonos)
+                    print(f"Terreno= {TerrTot}")
+                    break
+                #Aqui inicia la cuenta de Almacen/Inventario
+        elif Cuenta ==1003:
+            print("Cuenta seleccionada:Almacen/Inventario")
+            Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n"))
+            while  Eleccion == 1:
+                SCA = int(input("Para hacer un cargo seleccione #1\nPara hacer un abono seleccione #2\n"))
+                if SCA ==1:
+                    print("Para terminar de hacer un cargo ingrese 0")
+                    for i in Cargos1003:
+                        cargos1003 = int(input("Ingrese la cantidad: "))
+                        Cargos1003.append(cargos1003)
+                        if cargos1003==0:
+                            break
+                    InvCargos = sum(Cargos1003)
+                    InvTot=(InvCargos-InvAbonos)
+                    print(f"Almacen/Inventario= {InvTot}")
+                    break
+                elif SCA ==2:
+                    print("Para terminar de hacer un abono ingrese 0")
+                    for i in Abonos1003:
+                        abonos1003 = int(input("Ingrese la cantidad: "))
+                        Abonos1003.append(abonos1003)
+                        if abonos1003==0:
+                            break
+                    InvAbonos = sum(Abonos1003)
+                    InvTot=(InvCargos-InvAbonos)
+                    print(f"Almacen/Inventario= {InvTot}")
+                    break        
+        #Aqui inicia la cuenta de Edificios
+        elif Cuenta ==1004:
+            print("Cuenta seleccionada:Edificio")
+            Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n"))
+            while  Eleccion == 1:
+                SCA = int(input("Para hacer un cargo seleccione #1\nPara hacer un abono seleccione #2\n"))
+                if SCA ==1:
+                    print("Para terminar de hacer un cargo ingrese 0")
+                    for i in Cargos1004:
+                        cargos1004 = int(input("Ingrese la cantidad: "))
+                        Cargos1004.append(cargos1004)
+                        if cargos1004==0:
+                            break
+                    EdiCargos = sum(Cargos1004)
+                    EdiTot=(EdiCargos-EdiAbonos)
+                    print(f"Almacen/Edientario= {EdiTot}")
+                    break
+                elif SCA ==2:
+                    print("Para terminar de hacer un abono ingrese 0")
+                    for i in Abonos1004:
+                        abonos1004 = int(input("Ingrese la cantidad: "))
+                        Abonos1004.append(abonos1004)
+                        if abonos1004==0:
+                            break
+                    EdiAbonos = sum(Abonos1004)
+                    EdiTot=(EdiCargos-EdiAbonos)
+                    print(f"Almacen/Edientario= {EdiTot}")
+                    break
+                      
+        #Aqui inicia la cuenta de Equipo de computo
+        elif Cuenta ==1005:
+            print("Cuenta seleccionada:Eq de Computo")
+            Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n"))
+            while  Eleccion == 1:
+                SCA = int(input("Para hacer un cargo seleccione #1\nPara hacer un abono seleccione #2\n"))
+                if SCA ==1:
+                    print("Para terminar de hacer un cargo ingrese 0")
+                    for i in Cargos1005:
+                        cargos1005 = int(input("Ingrese la cantidad: "))
+                        Cargos1005.append(cargos1005)
+                        if cargos1005==0:
+                            break
+                    EqcomCargos = sum(Cargos1005)
+                    EqcomTot=(EqcomCargos-EqcomAbonos)
+                    print(f"Equipo de Computo= {EqcomTot}")
+                    break
+                elif SCA ==2:
+                    print("Para terminar de hacer un abono ingrese 0")
+                    for i in Abonos1005:
+                        abonos1005 = int(input("Ingrese la cantidad: "))
+                        Abonos1005.append(abonos1005)
+                        if abonos1005==0:
+                            break
+                    EqcomAbonos = sum(Abonos1005)
+                    EqcomTot=(EqcomCargos-EqcomAbonos)
+                    print(f"Almacen/Eqcomentario= {EqcomTot}")
+                    break        
+        
+        
+        #Aqui inicia la cuenta de Equipo de Transporte
+        elif Cuenta ==1006:
+            print("Cuenta seleccionada:Eq de transporte")
+            Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n"))
+            while  Eleccion == 1:
+                SCA = int(input("Para hacer un cargo seleccione #1\nPara hacer un abono seleccione #2\n"))
+                if SCA ==1:
+                    print("Para terminar de hacer un cargo ingrese 0")
+                    for i in Cargos1006:
+                        cargos1006 = int(input("Ingrese la cantidad: "))
+                        Cargos1006.append(cargos1006)
+                        if cargos1006==0:
+                            break
+                    EqtransCargos = sum(Cargos1006)
+                    EqtransTot=(EqtransCargos-EqtransAbonos)
+                    print(f"Almacen/Eqtransentario= {EqtransTot}")
+                    break
+                elif SCA ==2:
+                    print("Para terminar de hacer un abono ingrese 0")
+                    for i in Abonos1006:
+                        abonos1006 = int(input("Ingrese la cantidad: "))
+                        Abonos1006.append(abonos1006)
+                        if abonos1006==0:
+                            break
+                    EqtransAbonos = sum(Abonos1006)
+                    EqtransTot=(EqtransCargos-EqtransAbonos)
+                    print(f"Almacen/Eqtransentario= {EqtransTot}")
+                    break
+                
+                
+        #Aqui inicia la cuenta de Equipo de Capital Social
+        elif Cuenta ==1007:
+            print("Cuenta seleccionada:Capital Social")
+            Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n"))
+            while  Eleccion == 1:
+                SCA = int(input("Para hacer un cargo seleccione #1\nPara hacer un abono seleccione #2\n"))
+                if SCA ==1:
+                    print("Para terminar de hacer un cargo ingrese 0")
+                    for i in Cargos1007:
+                        cargos1007 = int(input("Ingrese la cantidad: "))
+                        Cargos1007.append(cargos1007)
+                        if cargos1007==0:
+                            break
+                    CapCargos = sum(Cargos1007)
+                    CapTot=(CapCargos-CapAbonos)
+                    print(f"Almacen/Capentario= {CapTot}")
+                    break
+                elif SCA ==2:
+                    print("Para terminar de hacer un abono ingrese 0")
+                    for i in Abonos1007:
+                        abonos1007 = int(input("Ingrese la cantidad: "))
+                        Abonos1007.append(abonos1007)
+                        if abonos1007==0:
+                            break
+                    CapAbonos = sum(Abonos1007)
+                    CapTot=(CapCargos-CapAbonos)
+                    print(f"Almacen/Capentario= {CapTot}")
+                    break
+                
+        #Aqui inicia la cuenta de Equipo de Gastos de Venta
+        elif Cuenta ==1008:
+            print("Cuenta seleccionada:Gastos de Venta")
+            Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n"))
+            while  Eleccion == 1:
+                SCA = int(input("Para hacer un cargo seleccione #1\nPara hacer un abono seleccione #2\n"))
+                if SCA ==1:
+                    print("Para terminar de hacer un cargo ingrese 0")
+                    for i in Cargos1008:
+                        cargos1008 = int(input("Ingrese la cantidad: "))
+                        Cargos1008.append(cargos1008)
+                        if cargos1008==0:
+                            break
+                    GastoCargos = sum(Cargos1008)
+                    GastoTot=(GastoCargos-GastoAbonos)
+                    print(f"Almacen/Gastoentario= {GastoTot}")
+                    break
+                elif SCA ==2:
+                    print("Para terminar de hacer un abono ingrese 0")
+                    for i in Abonos1008:
+                        abonos1008 = int(input("Ingrese la cantidad: "))
+                        Abonos1008.append(abonos1008)
+                        if abonos1008==0:
+                            break
+                    GastoAbonos = sum(Abonos1008)
+                    GastoTot=(GastoCargos-GastoAbonos)
+                    print(f"Almacen/Gastoentario= {GastoTot}")
+                    break        
+        
+        
+        
+        #Aqui inicia la cuenta de Equipo de Costos de Venta
+        elif Cuenta ==1009:
+            print("Cuenta seleccionada:Costos de Venta")
+            Eleccion = int(input("Si su cuenta es correcta ingrese #1 \nSi su cuenta es incorrecta ingrese un numero diferente a 1\n"))
+            while  Eleccion == 1:
+                SCA = int(input("Para hacer un cargo seleccione #1\nPara hacer un abono seleccione #2\n"))
+                if SCA ==1:
+                    print("Para terminar de hacer un cargo ingrese 0")
+                    for i in Cargos1009:
+                        cargos1009 = int(input("Ingrese la cantidad: "))
+                        Cargos1009.append(cargos1009)
+                        if cargos1009==0:
+                            break
+                    CostoCargos = sum(Cargos1009)
+                    CostoTot=(CostoCargos-CostoAbonos)
+                    print(f"Almacen/Costoentario= {CostoTot}")
+                    break
+                elif SCA ==2:
+                    print("Para terminar de hacer un abono ingrese 0")
+                    for i in Abonos1009:
+                        abonos1009 = int(input("Ingrese la cantidad: "))
+                        Abonos1009.append(abonos1009)
+                        if abonos1009==0:
+                            break
+                    CostoAbonos = sum(Abonos1009)
+                    CostoTot=(CostoCargos-CostoAbonos)
+                    print(f"Almacen/Costoentario= {CostoTot}")
+                    break
